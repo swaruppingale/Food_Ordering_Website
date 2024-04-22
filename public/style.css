@@ -421,8 +421,9 @@ section {
   gap: 1rem;
 }
 
-.contact .row .map {
-  flex: 1 1 45rem;
+/* .contact .row .map {
+  flex: 1 1 100px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -431,7 +432,24 @@ section {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
+} */
+.contact .row {
+  display: flex;
+  background: #13131a;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Set the height of the flex container */
+  height: 500px; 
 }
+
+.contact .row .map {
+  flex: 1 1 100px;
+  /* Increase the height of the flex item */
+  height: 400px; 
+  width: 100%;
+  object-fit: cover;
+}
+
 
 .contact .row form h3 {
   text-transform: uppercase;

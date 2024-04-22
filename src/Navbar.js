@@ -160,7 +160,7 @@ const Navbar = () => {
               <img src="./images/cart-item-4.png" />
               <p>Salad</p>
               <p>₹1000</p>
-              <button className="btnchk" onClick={()=> <a href=".payment.js"></a>}>Check Out</button>
+              <button className="btnchk" onClick={()=> <a href="./pay.js"></a>}>Check Out</button>
               
               {/* Navbar{" "}
               <button className="btnchk" onClick={()=> navigate("payment.js")}>Check Out</button> */}

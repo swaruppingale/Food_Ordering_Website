@@ -14,9 +14,15 @@ const Contact = () => {
             
             loading="lazy"
           </iframe>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15084.316706849677!2d72.82105872887881!3d19.06025614569727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c93f819e7201%3A0xac310b45a21414e2!2sMcDonald&#39;s!5e0!3m2!1sen!2sin!4v1713758156298!5m2!1sen!2sin">
+            
+            loading="lazy"
+          </iframe>
           
 
-          <form action="">
+          {/* <form action="">
             <h3>get in touch</h3>
             <div class="inputBox">
               <span class="fas fa-user"></span>
@@ -31,7 +37,7 @@ const Contact = () => {
               <input type="number" placeholder="number" />
             </div>
             <input type="submit" value="contact now" class="btn" />
-          </form>
+          </form> */}
         </div>
       </section>
     </>

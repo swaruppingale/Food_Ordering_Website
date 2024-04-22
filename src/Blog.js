@@ -1,5 +1,5 @@
 import React from "react";
-import { blog } from "./Data";
+import { menu, cart, product, review, blog } from "./Data.js";
 const Blog = () => {
   return (
     <>
@@ -15,15 +15,14 @@ const Blog = () => {
                 <img src={item.img} alt="" />
               </div>
               <div class="content">
-                <a href="#" class="title">
-                  tasty and refreshing spices
+                <a href="https://pinchofyum.com/incredible-gochujang-sauce" target="main" class="title">
+                Incredible Gochujang Sauce
                 </a>
-                <span>by admin / 21st may, 2021</span>
+                <span>by Lindsay / 10th April</span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                  dicta.
+                Gochujang is a red chile paste that has its roots in Korean cooking! 
                 </p>
-                <a href="#" class="btn">
+                <a href="https://pinchofyum.com/incredible-gochujang-sauce" target="main" class="btn">
                   read more
                 </a>
               </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { menu } from "./Data";
+import { menu } from "./Data.js";
 const Menu = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const Menu = () => {
         <h1 className="heading">
           our <span>menu</span>
         </h1>
-
+vc
         <div className="box-container">
           {menu.map((item, index) => (
             <div className="box" key={index * Math.random()}>

@@ -4,17 +4,24 @@ const Home = () => {
   return (
     <>
       <section className="home" id="home">
+        
+      <div className="image">
+            <img src="./images/about-img.png"/>
+          </div>
+        
         <div className="content">
           <h3>
-            fresh <span>food in the </span>morning
+            <span>Where flavor and </span>passion unite.
           </h3>
+          
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-            labore, sint cupiditate distinctio tempora reiciendis.
+          Welcome to our food website!Explore a wide range of mouthwatering dishes 
+          crafted with fresh ingredients and bursting with flavor
           </p>
-          <a href="#" className="btn">
+            <a href="#" className="btn">
             get yours now
           </a>
+          
         </div>
       </section>
     </>

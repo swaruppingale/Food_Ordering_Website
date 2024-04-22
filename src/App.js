@@ -15,31 +15,57 @@
 
 // export default App;
 
-import React from "react";
-import "./pages/assets/style.css";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import About from "./About";
-import Menu from "./Menu";
-import Products from "./Products";
-import Review from "./Review";
-import Contact from "./Contact";
-import Blog from "./Blog";
-import Footer from "./Footer";
+import React from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Login from './Login';
+import Home from './Home';
+import Navbar from './Navbar';
+import About from './About';
+import Menu from './Menu';
+import Products from './Products';
+import Review from './Review';
+import Contact from './Contact';
+import Blog from './Blog';
+import Footer from './Footer';
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <About />
-      <Menu />
-      <Products />
-      <Review />
-      <Contact />
-      <Blog />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* Route for the login page */}
+        <Route path="/" element={<Login />} />
+        
+        {/* Routes for other pages */}
+        <Route
+          path="/home"
+          element={
+            <>
+              <Navbar />
+              <Home />
+              <About />
+              <Blog/>
+              <Menu/>
+              <Products/>
+              <Contact/>
+              <Review/>
+              <Footer />
+              
+
+            </>
+          }
+        />
+        {/* Add routes for other pages as needed */}
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <About />
+              <Footer />
+            </>
+          }></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

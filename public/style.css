@@ -12,6 +12,12 @@
   transition: 0.2s linear;
 }
 
+.background{
+  background-image:url("./images/background.jpg");
+  background-size: cover;
+}
+
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -72,7 +78,7 @@ section {
   background: #010103;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 8px 7%;
   border-bottom: 0.2rem solid #ffc107;
   position: fixed;
@@ -151,9 +157,9 @@ section {
 }
 
 .header .cart-items-container {
-  position: absolute;
+  position: fixed;
   top: 100%;
-  right: -100%;
+  right: 0%;
   height: calc(100vh - 9.5rem);
   width: 35rem;
   background: #fff;
@@ -248,6 +254,20 @@ section {
 .about .row .image {
   flex: 1 1 45rem;
 }
+
+.home.image {
+  flex: 1 1 45rem;
+}
+.home .image img {
+  
+    width: 100%;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+  
 
 .about .row .image img {
   width: 100%;

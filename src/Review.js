@@ -1,5 +1,5 @@
 import React from "react";
-import { review } from "./Data";
+import { review } from "./Data.js";
 // import qouteImg from "./pages/assets/images/quote-img.png";
 const Review = () => {
   return (
@@ -12,7 +12,7 @@ const Review = () => {
         <div className="box-container">
           {review.map((item, index) => (
             <div className="box" key={index * Math.random()}>
-              <img src="./pages/assests/images/quote-img.png" alt="" className="quote" />
+              <img src="./images/quote-img.png" alt="" className="quote" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 nulla sit libero nemo fuga sequi nobis? Necessitatibus aut

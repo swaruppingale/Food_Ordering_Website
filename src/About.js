@@ -10,23 +10,20 @@ const About = () => {
 
         <div className="row">
           <div className="image">
-            <img src={AboutImg} alt="" />
+            <img src="./images/about-img.jpeg"/>
           </div>
 
           <div className="content">
             <h3>what makes our food special?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae
-              ratione a officiis id temporibus autem? Quod nemo facilis
-              cupiditate. Ex, vel?
+            At our restaurant, we take pride in creating dishes that are truly exceptional. What makes our food special? 
+            It's our commitment to using only the finest, freshest ingredients sourced locally and seasonally whenever possible. 
+            Our talented chefs craft each dish with passion and creativity, combining innovative techniques with time-honored traditions to bring out the best in every flavor.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-              amet enim quod veritatis, nihil voluptas culpa! Neque consectetur
-              obcaecati sapiente?
+            Our menus are carefully curated to offer a diverse range of culinary experiences, from classic favorites to exciting new tastes.
             </p>
-            <a href="#" className="btn">
+            <a href="https://www.entrepreneur.com/en-in/growth-strategies/what-makes-your-food-menu-unique/328227" target="main" className="btn">
               learn more
             </a>
           </div>

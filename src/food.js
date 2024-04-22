@@ -52,3 +52,4 @@ cards.forEach((curCard)=>{
         })
     })
 })
+

@@ -1,12 +1,12 @@
 import React from "react";
-import { product } from "./Data";
+import { product } from "./Data.js";
 const Products = () => {
   return (
     <>
       <section className="products" id="products">
         <h1 className="heading">
           our <span>products</span>
-        </h1>
+        </h1>cv
 
         <div className="box-container">
           {product.map((item, index) => (

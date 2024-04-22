@@ -28,6 +28,7 @@ body{
     background-attachment: fixed;
     overflow: hidden;
 }
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -36,16 +37,17 @@ body{
     background: rgba(39, 39, 39, 0.4);
 }
 .nav{
-    position: fixed;
-    top: 0;
+    
+    
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100px;
     line-height: 100px;
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
     z-index: 100;
-}
+} 
 .nav-logo p{
     color: white;
     font-size: 25px;
@@ -208,10 +210,11 @@ header{
         top: 100px;
     }
     .nav-menu{
-        position: absolute;
+        
         top: -800px;
         display: flex;
         justify-content: center;
+        align-items: center;
         background: rgba(255, 255, 255, 0.2);
         width: 100%;
         height: 90vh;
@@ -270,8 +273,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
-    top: 0%;
+    
+    
     background-color: black;
     color: #fff;
 }
@@ -393,6 +396,41 @@ li a{
     transition: all 1s ease;
      
 }
+.btnchk{
+  background-color: yellow; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.dropdown-content{
+    color: black;
+    font-size: small;
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: 1000px;
+    padding:15px;
+    right: 1.5rem;
+
+
+}
+.dropdown-content::before{
+     
+    position: absolute;
+    padding:15px;
+    top:-0.7rem;
+    right: 1.5rem;
+    background-color: white;
+    transform: rotate(90deg);
+    width: 500px;
+    height: 1000px;
+}
+
+
  .trends img{
     width: 280px;
     background-color: #fff;
@@ -532,3 +570,4 @@ li a{
          height: 120px;
     }
 }
+

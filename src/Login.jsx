@@ -1,10 +1,16 @@
-import React from "react";
-import { auth } from "../firebase";
+import React, { useEffect } from "react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from "./firebase.js";
+import { useNavigate } from "react-router-dom";
+import "./login.css"
+
 
 const Login = () => {
+  const navigate = useNavigate()
   const handleLogin = (e) => {
-    e.preventDefault()
+
+    e.preventDefault();
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result) => {
@@ -13,6 +19,7 @@ const Login = () => {
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
+        navigate("/home")
         // IdP data available using getAdditionalUserInfo(result)
         // ...
       })
@@ -28,20 +35,17 @@ const Login = () => {
       });
   };
   return (
+    <div className="background">
     <div className="wrapper">
       <nav className="nav">
         <div className="nav-logo ">
-          <img src="good.svg" width="100" height="60" alt="Logo" />
+        <img src="./images/logo11.png" width="100" height="60" alt="Logo" />
         </div>
 
-        <div className="nav-button">
-          <button className="btn white-btn">Sign In</button>
-          <button className="btn" id="registerBtn">
-            Sign Up
-          </button>
-        </div>
+        
+        
         <div className="nav-menu-btn">
-          <i className="bx bx-menu" ></i>
+          <i className="bx bx-menu"></i>
         </div>
       </nav>
 
@@ -49,10 +53,7 @@ const Login = () => {
         <div className="login-container" id="login">
           <div className="top">
             <span>
-              Don't have an account?{" "}
-              <a href="#">
-                Sign Up
-              </a>
+               <a href="#"></a>
             </span>
             <header>Login</header>
           </div>
@@ -65,7 +66,11 @@ const Login = () => {
             <i className="bx bx-user"></i>
           </div>
           <div className="input-box">
-            <input type="password" className="input-field" placeholder="Password" />
+            <input
+              type="password"
+              className="input-field"
+              placeholder="Password"
+            />
             <i className="bx bx-lock-alt"></i>
           </div>
           <div className="input-box">
@@ -79,12 +84,12 @@ const Login = () => {
           </div>
           <div className="two-col">
             <div className="one">
-              <input type="checkbox" id="login-check" />
-              <label htmlFor="login-check"> Remember Me</label>
+              
+              <label htmlFor="login-check"></label>
             </div>
             <div className="two">
               <label>
-                <a href="#">Forgot password?</a>
+                <a href="#"></a>
               </label>
             </div>
           </div>
@@ -93,20 +98,25 @@ const Login = () => {
         <div className="register-container" id="register">
           <div className="top">
             <span>
-              Have an account?{" "}
-              <a href="#" >
-                Login
-              </a>
+              Have an account? <a href="#">Login</a>
             </span>
             <header>Sign Up</header>
           </div>
           <div className="two-forms">
             <div className="input-box">
-              <input type="text" className="input-field" placeholder="Firstname" />
+              <input
+                type="text"
+                className="input-field"
+                placeholder="Firstname"
+              />
               <i className="bx bx-user"></i>
             </div>
             <div className="input-box">
-              <input type="text" className="input-field" placeholder="Lastname" />
+              <input
+                type="text"
+                className="input-field"
+                placeholder="Lastname"
+              />
               <i className="bx bx-user"></i>
             </div>
           </div>
@@ -115,7 +125,11 @@ const Login = () => {
             <i className="bx bx-envelope"></i>
           </div>
           <div className="input-box">
-            <input type="password" className="input-field" placeholder="Password" />
+            <input
+              type="password"
+              className="input-field"
+              placeholder="Password"
+            />
             <i className="bx bx-lock-alt"></i>
           </div>
           <div className="input-box">
@@ -135,7 +149,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
-
 export default Login;

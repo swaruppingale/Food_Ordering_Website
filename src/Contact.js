@@ -10,10 +10,11 @@ const Contact = () => {
         <div class="row">
           <iframe
             class="map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11993.267641772954!2d-72.8480109!3d41.2802068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36c6fa619c4f5603!2sMcDonald&#39;s!5e0!3m2!1sen!2s!4v1633364807635!5m2!1sen!2s"
-            allowfullscreen=""
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30167.394697179927!2d72.87013591949972!3d19.06706400665741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6f12c3372e1%3A0x97fe344eb34ea78!2sMcDonald&#39;s!5e0!3m2!1sen!2sin!4v1713538866747!5m2!1sen!2sin">
+            
             loading="lazy"
-          ></iframe>
+          </iframe>
+          
 
           <form action="">
             <h3>get in touch</h3>

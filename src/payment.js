@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function payment() {
+function pay() {
 
    return (
     <div>
@@ -75,4 +75,4 @@ function payment() {
     
   
 
-export default payment;
+export default pay;
